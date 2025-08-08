@@ -1,0 +1,345 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Basic Styling for the Navigation Bar */
+/* Navigation Styling */
+nav {
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Default Style for Each Navigation Link */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Bungee Spice", sans-serif; /* Single font family for all links */
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 8px;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, text-shadow 0.3s ease;
+    opacity: 0.8; /* Slightly transparent initially */
+    
+}
+
+/* Pop-Up and Glowing Effect on Hover for Each Item */
+nav ul li a:hover {
+    color: #FFD700; /* Gold color for text */
+    background-color: rgba(0, 0, 0, 0.5); /* Darker transparent background */
+    transform: scale(1.2); /* Pop-up effect */
+    opacity: 1; /* Full opacity on hover */
+    text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFA500; /* Stronger glowing effect */
+}
+
+
+/* About Section Styling */
+#about {
+    background-color: black; /* Black background for the About section */
+    color: #FFD700; /* Shiny yellow text color */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center the content */
+}
+
+#about h2 {
+    font-family: "Bungee Spice", sans-serif; /* Font style for the heading */
+    font-size: 36px; /* Adjust the font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#about p {
+    font-family: "Josefin Sans", sans-serif; /* Font style for the paragraph */
+    font-size: 18px; /* Adjust the font size for the paragraph */
+    line-height: 1.6; /* Increase line height for readability */
+    max-width: 800px; /* Limit the width of the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700; /* Glowing effect */
+    opacity: 0.9; /* Slight transparency to create a softer look */
+}
+
+/* Optional: Add a smooth hover effect for the paragraph */
+#about p:hover {
+    text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700; /* Stronger glowing effect */
+    opacity: 1; /* Full opacity when hovered */
+}
+
+
+/* https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */
+
+#home {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holy-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.holy-div:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #b85518;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.welcome-text h1, .welcome-text p {
+    font-family: "Bungee Spice", sans-serif; /* Set the font-family to "Bungee Spice" */
+    transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease, font-family 0.3s ease;
+}
+
+.holy-div:hover .welcome-text h1,
+.holy-div:hover .welcome-text p {
+    font-family: "Bungee Spice", sans-serif; /* Font remains "Bungee Spice" on hover */
+    transform: scale(1.2);
+    color: #FFD700; /* Text color change to shiny yellow */
+    opacity: 1;
+}
+
+
+
+#skills {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Skills Section Styling */
+#skills {
+    background-color: black; /* Black background */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center content */
+    color: #FFD700; /* Yellow color for text */
+}
+
+#skills h2 {
+    font-family: "Bungee Spice", sans-serif; /* Font style for heading */
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FFD700; /* Yellow color */
+    /* Glowing effect */
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    width: 120px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    color: #FFD700;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; /* Glowing effect */
+}
+
+.skill-item i {
+    font-size: 48px; /* Icon size */
+    margin-bottom: 10px;
+    color: #FFD700; /* Icon color */
+}
+
+.skill-item p {
+    font-size: 18px;
+}
+
+.skill-item:hover {
+    transform: scale(1.1); /* Pop-up effect */
+    text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700; /* Enhanced glow */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter background */
+}
+
+
+/* Projects Section Styling */
+#projects {
+    background-color: black;
+    padding: 40px 20px;
+    text-align: center;
+    color: #FFD700; /* Yellow color */
+}
+
+#projects h2 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FFD700;
+    
+}
+
+/* Project Item Styling */
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Slight pop-up effect */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Left-side Project Number */
+.project-heading h3 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 24px;
+    color: #FFD700;
+    margin: 0 20px;
+    text-align: left;
+    
+    flex-basis: 20%;
+}
+
+/* Right-side Project Details */
+.project-details {
+    flex-basis: 80%;
+    text-align: left;
+}
+
+.project-details h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #FFD700;
+}
+
+.project-details p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #FFD700;
+    opacity: 0.9;
+}
+
+.project-details a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    color: #FFD700;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.project-details a:hover {
+    color: #FFF500; /* Lighter yellow on hover */
+}
+
+#contact {
+    background-color: #000; /* Black background for contrast */
+    color: #FFD700; /* Shiny yellow font color for text */
+    padding: 40px;
+    text-align: center;
+   
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: #FFD700;
+    background: linear-gradient(90deg, #FFD700, #FFC300, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shiny-text 3s ease-in-out infinite;
+}
+
+@keyframes shiny-text {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    font-family: 'Tiny5', sans-serif;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #FFD700;
+    color: #000; /* Black text color on hover for contrast */
+    transform: scale(1.1);
+}
+
